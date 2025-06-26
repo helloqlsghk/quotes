@@ -18,29 +18,35 @@
 
 #  설치 및 실행 방법
 
-## 1. Git Clone
+1. Git Clone
 
 ```bash
 git clone https://github.com/helloqlsghk/quotes.git
 cd quotes
 ./gradlew bootRun 실행
+```
+
 
 
 혹은
 
 
 2. JAR 파일 빌드
-bash
-복사
-편집
+
+
+
+```bash
+cd quotes
 ./gradlew clean build
+```
+
+
 빌드가 완료되면 /build/libs/quotes-0.0.1-SNAPSHOT.jar 파일이 생성됩니다.
 
 3. 서버 실행
-bash
-복사
-편집
+```bash
 java -jar build/libs/quotes-0.0.1-SNAPSHOT.jar
+```
 기본 포트는 8080입니다.
 실행되면 Swagger 문서를 통해 API를 바로 테스트할 수 있습니다.
 
